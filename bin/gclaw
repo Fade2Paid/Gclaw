@@ -12,7 +12,7 @@
 #   gclaw beat        run one heartbeat now
 set -euo pipefail
 
-SKILL_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SKILL_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/.." && pwd)"
 export GCLAW_HOME="${GCLAW_HOME:-$HOME/.gclaw}"
 PY="$(command -v python3 || true)"
 NODE="$(command -v node || true)"
