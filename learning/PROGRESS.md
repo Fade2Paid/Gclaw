@@ -107,13 +107,16 @@ run E2E (Claude Code). ✅
 - [ ] Read *Skill Issue: Harness Engineering for Coding Agents*.
 
 **BUILD — the "Hello, Harness" milestone**
-- [ ] Loop runs observe → plan → act → verify.
-- [ ] Writes a `PLAN.md` and updates it each turn.
-- [ ] Destructive tools gated behind a permission check.
-- [ ] Runs a test after every change; feeds **only summary lines** back to context.
-- [ ] Logs full output to a file, not the context window.
+- [x] Loop runs observe → plan → act → verify (ran it on the waitlist task).
+- [x] Writes a `PLAN.md` and updates it each turn (learning/vybecheck-PLAN.md).
+- [x] Destructive tools gated behind a permission check (AGENTS.md "ask first").
+- [x] Runs a test after every change (`html-validate` + JS `--check`); tuned the
+  verify gate with `.htmlvalidate.json` to ignore style noise, catch real bugs.
+- [x] Logs full output to a file, not the context window (summary lines back).
 
 **Exit:** a single-agent harness completes your Level 0 task on its own.
+_Nearly there: code built + verified. Remaining (M6): Joel adds his Formspree ID,
+redeploys, and confirms a test email actually arrives → then exit is fully met._
 
 ---
 
@@ -193,6 +196,12 @@ run E2E (Claude Code). ✅
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (10)** — BUILT the first harness (Level 3). Ran plan→act→verify on
+  the waitlist task: wrote vybecheck-PLAN.md, rewrote the form to POST to Formspree
+  with real error handling (success only on real success), verified with
+  `html-validate` (tuned via `.htmlvalidate.json` to drop style noise) + JS
+  `node --check` — both clean. Built file delivered to Joel. Exit pends M6: Joel's
+  Formspree ID + redeploy + a confirmed test email. Then to Levels 4/5/6.
 - **2026-07-06 (9)** — Finished Level 2's remaining primitives (Orchestration,
   Verification, Observability, Debugging, HITL) via the field manual + gclaw
   examples. All 12 primitives named + mapped to loop stages; framework run E2E.
