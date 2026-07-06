@@ -53,12 +53,13 @@ Do those three and you're standing on Level 3's doorstep.
 
 ## ▣ Level 1 — Foundations
 
-**READ**
-- [ ] Both *Harness Engineering* essays (OpenAI + Fowler).
-- [ ] *Building Effective Agents* (Anthropic).
-- [ ] *Harness Design for Long-Running Application Development*.
-- [ ] *The Anatomy of an Agent Harness* (LangChain).
-- [ ] Skim *Writing Effective Tools* / *Beyond Permission Prompts* / *Demystifying Evals*.
+**READ** — covered via the field manual's Foundations synthesis (p.4); originals
+linked in the manual for a deeper dive later.
+- [x] Both *Harness Engineering* essays (OpenAI + Fowler) — 3 systems; "humans on the loop."
+- [x] *Building Effective Agents* (Anthropic) — workflow vs. agent; compose primitives.
+- [x] *Harness Design for Long-Running Application Development* — "assumptions expire."
+- [x] *The Anatomy of an Agent Harness* (LangChain) — the 5 primitives.
+- [x] Skim *Writing Effective Tools* / *Beyond Permission Prompts* / *Demystifying Evals*.
 
 **BUILD**
 - [x] Install a framework and run its quickstart E2E — done: you built real apps.
@@ -168,7 +169,7 @@ Do those three and you're standing on Level 3's doorstep.
 | Level | Read | Build | Exit met |
 |-------|------|-------|----------|
 | 0 — Orientation | ☐ | ☐ | ☐ |
-| 1 — Foundations | ☐ | ☑ | ☐ |
+| 1 — Foundations | ☑ | ☑ | ☑ |
 | 2 — Primitives  | ☐ | ☐ | ☐ |
 | 3 — Build       | ☐ | ☐ | ☐ |
 | 4 — Scale       | ☐ | ☐ | ☐ |
@@ -183,6 +184,13 @@ Do those three and you're standing on Level 3's doorstep.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (6)** — Walked the field manual's Level 1 Foundations (p.4):
+  Fowler's 3 systems + "humans on the loop," workflow-vs-agent, "assumptions
+  expire," the 5 primitives, the PLAN/IMPLEMENT/Documentation artifact pattern
+  (= the starter-pack files), and the constitutive 4-element definition of a
+  harness. **Level 1 closed** — exit criterion met (name loop steps, primitives,
+  why assumptions expire). Next: Level 2 primitives in the manual (already did
+  the 7 core via gclaw; will cover the remaining orchestration/verify/observe/HITL).
 - **2026-07-06 (5)** — Got the REAL Vybecheck codebase: a single static
   `index.html` (plain HTML/CSS/JS, no framework/npm/build) — my Next.js guess
   was wrong. Rewrote `vybecheck-AGENTS.md` for the true stack; verify is now
