@@ -39,7 +39,10 @@ Do those three and you're standing on Level 3's doorstep.
 
 **READ**
 - [x] Read the Orientation + Mental Model pages — walked through the field manual (pp.1–3).
-- [ ] Write your own one-paragraph definition of "harness."  ← _your words here_
+- [x] Write your own one-paragraph definition of "harness."
+  > _Joel's definition (2026-07-06):_ "A codebase for agents that acts like laws
+  > the agent obeys — so it doesn't trust itself to act, but verifies its actions
+  > are the correct steps."
 - [x] Draw the loop (observe → plan → act → verify) — you learned it this session.
 
 **BUILD**
@@ -184,6 +187,9 @@ linked in the manual for a deeper dive later.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (7)** — Joel wrote his own definition of "harness" (recorded in
+  the L0 READ box) — strong grasp of the verification + "laws the agent obeys"
+  core. One L0 box left: pick the first concrete harness task.
 - **2026-07-06 (6)** — Walked the field manual's Level 1 Foundations (p.4):
   Fowler's 3 systems + "humans on the loop," workflow-vs-agent, "assumptions
   expire," the 5 primitives, the PLAN/IMPLEMENT/Documentation artifact pattern
