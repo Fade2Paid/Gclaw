@@ -74,7 +74,7 @@ linked in the manual for a deeper dive later.
 
 ---
 
-## ▢ Level 2 — Design Primitives  ← YOU ARE HERE
+## ▢ Level 2 — Design Primitives  (reads + exit done; build tasks fold into L3)
 
 **READ** — one pass per primitive
 - [x] Agent Loop — saw it live in gclaw's heartbeat (SKILL.md:63).
@@ -84,18 +84,22 @@ linked in the manual for a deeper dive later.
 - [x] Skills & MCP — gclaw IS a skill on the GDEX MCP; forge writes its own.
 - [x] Permissions — gclaw's "deterministic, never advisory" riskguard + deny-list.
 - [x] Memory — gclaw's metabolism.json + regime-conditional memory.py.
-- [ ] Skim: Orchestration, Verification, Observability, Debugging, HITL.
+- [x] Orchestration, Verification, Observability, Debugging, HITL — covered
+  (swarm=orchestration, html-validate=verification, dashboard=observability,
+  AGENTS.md "ask first"=HITL). All 12 primitives now named + mapped to a stage.
 
-**BUILD**
+**BUILD** — hands-on; these fold into the Level 3 build (they're about building an
+agent's tools, which the Vybecheck harness run will exercise).
 - [ ] Define 3–5 tools with clear names + strict schemas.
 - [ ] Add structured-output enforcement (no ad-hoc JSON parsing).
 - [ ] Turn on prompt caching for system prompt + tool defs.
 
-**Exit:** all 12 primitives named, each mapped to a loop stage, framework run E2E.
+**Exit (MET):** all 12 primitives named, each mapped to a loop stage, framework
+run E2E (Claude Code). ✅
 
 ---
 
-## ▢ Level 3 — Build Your First Harness
+## ▢ Level 3 — Build Your First Harness  ← YOU ARE HERE
 
 **READ**
 - [ ] Work through *Learn Harness Engineering* (or shareAI-lab/learn-claude-code).
@@ -175,7 +179,7 @@ linked in the manual for a deeper dive later.
 |-------|------|-------|----------|
 | 0 — Orientation | ☑ | ☑ | ☑ |
 | 1 — Foundations | ☑ | ☑ | ☑ |
-| 2 — Primitives  | ☐ | ☐ | ☐ |
+| 2 — Primitives  | ☑ | ☐ | ☑ |
 | 3 — Build       | ☐ | ☐ | ☐ |
 | 4 — Scale       | ☐ | ☐ | ☐ |
 | 5 — Harden      | ☐ | ☐ | ☐ |
@@ -189,6 +193,11 @@ linked in the manual for a deeper dive later.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (9)** — Finished Level 2's remaining primitives (Orchestration,
+  Verification, Observability, Debugging, HITL) via the field manual + gclaw
+  examples. All 12 primitives named + mapped to loop stages; framework run E2E.
+  **Level 2 reads + exit MET** (3 hands-on BUILD tasks fold into the L3 build).
+  Now standing at Level 3 — Build Your First Harness (Vybecheck waitlist).
 - **2026-07-06 (8)** — Picked the first harness task: make the Vybecheck waitlist
   form actually save emails. **Level 0 CLOSED** (all boxes + exit met). Levels 0
   and 1 now fully complete. Next: finish Level 2's remaining primitives, then the
