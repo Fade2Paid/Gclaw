@@ -45,6 +45,7 @@ Do those three and you're standing on Level 3's doorstep.
 **BUILD**
 - [ ] Pick the task your first harness will tackle (one concrete, verifiable thing).
 - [x] Pick your stack: **Claude + Claude Code** (Claude Agent SDK family).
+- [x] Pick your first-harness project: **Vybecheck** (vybecheck.app).
 
 **Exit:** you can explain what a harness is and why every component is temporary.
 
@@ -182,6 +183,9 @@ Do those three and you're standing on Level 3's doorstep.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (3)** — Picked Vybecheck as the first-harness project. Drafted its
+  `AGENTS.md` (learning/vybecheck-AGENTS.md) assuming a Next.js/React + npm stack.
+  Open: confirm the stack via `cat package.json` and fix the ⚠ lines; write PLAN.md.
 - **2026-07-06 (2)** — Walked the 7 Level-2 primitives using gclaw's real code
   as the example, and mapped each to a loop stage. Checked the 7 primitive READ
   boxes. Wrote `learning/AGENTS.template.md` (fill-in, with gclaw as the worked
