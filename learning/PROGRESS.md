@@ -183,6 +183,12 @@ Do those three and you're standing on Level 3's doorstep.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (5)** — Got the REAL Vybecheck codebase: a single static
+  `index.html` (plain HTML/CSS/JS, no framework/npm/build) — my Next.js guess
+  was wrong. Rewrote `vybecheck-AGENTS.md` for the true stack; verify is now
+  `npx html-validate index.html` + browser console check. Live proof of the
+  manual's "verify, don't assume" lesson. Candidate first tasks noted: the
+  waitlist form doesn't save emails; pricing buttons have no action.
 - **2026-07-06 (4)** — Started reading the field manual together. Covered
   Section 0 (Orientation) + the Mental Model (pp.1–3): the definition, the core
   "every crutch is temporary" principle, the 5 primitives, the observe→plan→act
