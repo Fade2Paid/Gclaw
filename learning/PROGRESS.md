@@ -70,13 +70,13 @@ Do those three and you're standing on Level 3's doorstep.
 ## ▢ Level 2 — Design Primitives  ← YOU ARE HERE
 
 **READ** — one pass per primitive
-- [ ] Agent Loop (ReAct + LangGraph low-level).
-- [ ] Planning (Plan-and-Execute).
-- [ ] Context (Compaction + Prompt Caching).
-- [ ] Tool Design (Writing Effective Tools + Tool Annotations).
-- [ ] Skills & MCP (MCP intro + Code Execution with MCP).
-- [ ] Permissions (Beyond Permission Prompts + OWASP LLM06).
-- [ ] Memory (Letta / mem0).
+- [x] Agent Loop — saw it live in gclaw's heartbeat (SKILL.md:63).
+- [x] Planning — gclaw's numbered procedure + forge.py ranked intents.
+- [x] Context — gclaw loads references on-demand; summaries to context, full logs to file.
+- [x] Tool Design — gclaw's `open_perp_position` strict schema (SKILL.md:96).
+- [x] Skills & MCP — gclaw IS a skill on the GDEX MCP; forge writes its own.
+- [x] Permissions — gclaw's "deterministic, never advisory" riskguard + deny-list.
+- [x] Memory — gclaw's metabolism.json + regime-conditional memory.py.
 - [ ] Skim: Orchestration, Verification, Observability, Debugging, HITL.
 
 **BUILD**
@@ -182,7 +182,12 @@ Do those three and you're standing on Level 3's doorstep.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
-- **2026-07-06** — Set up the tracker. Established the mental model (observe →
+- **2026-07-06 (2)** — Walked the 7 Level-2 primitives using gclaw's real code
+  as the example, and mapped each to a loop stage. Checked the 7 primitive READ
+  boxes. Wrote `learning/AGENTS.template.md` (fill-in, with gclaw as the worked
+  example). Remaining for L2: skim orchestration/verification/observability/HITL,
+  then the 3 BUILD tasks. Next action for you: pick your first-harness project +
+  its verify command, then fill in the template.
+- **2026-07-06 (1)** — Set up the tracker. Established the mental model (observe →
   plan → act → verify + the 5 primitives). Credited Level 1 BUILD from your
-  prior app work. Next: read field-manual L0–2, write your own "harness"
-  definition, pick your first-harness project + its verify command.
+  prior app work.
