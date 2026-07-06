@@ -122,10 +122,10 @@ redeploys, and confirms a test email actually arrives → then exit is fully met
 
 ## ▢ Level 4 — Scale & Orchestrate
 
-**READ**
-- [ ] *Choosing the Right Multi-Agent Architecture*.
-- [ ] *Effective Harnesses for Long-Running Agents*.
-- [ ] The protocol map (MCP / A2A / AG-UI).
+**READ** — covered at overview level via the field manual (p.10).
+- [x] *Choosing the Right Multi-Agent Architecture* — topology chosen deliberately.
+- [x] *Effective Harnesses for Long-Running Agents* — initializer→worker handoff.
+- [x] The protocol map (MCP / A2A / AG-UI).
 
 **BUILD**
 - [ ] Add a sandbox (E2B or Daytona) for code execution.
@@ -138,10 +138,10 @@ redeploys, and confirms a test email actually arrives → then exit is fully met
 
 ## ▢ Level 5 — Harden, Verify, Observe
 
-**READ**
-- [ ] *Demystifying Evals* + *Agent Evaluation Readiness Checklist*.
-- [ ] *How We Contain Claude* + OWASP LLM01 (prompt injection).
-- [ ] Skim a sandbox option (E2B / Daytona / NVIDIA OpenShell).
+**READ** — covered at overview level via the field manual (p.11).
+- [x] *Demystifying Evals* + *Readiness Checklist* — capability vs regression evals.
+- [x] *How We Contain Claude* + OWASP LLM01 — lethal trifecta; isolation as primary boundary.
+- [x] Skim a sandbox option (E2B / Daytona / NVIDIA OpenShell).
 
 **BUILD**
 - [ ] Add promptfoo CI evals — capability evals separate from regression evals.
@@ -154,10 +154,10 @@ redeploys, and confirms a test email actually arrives → then exit is fully met
 
 ## ▢ Level 6 — Ship to Production
 
-**READ**
-- [ ] *State of Agent Engineering 2026* (mind the eval gap).
-- [ ] *FinOps for Agents* + a cost-optimization guide.
-- [ ] *Backtesting AI Agents* (pass^k).
+**READ** — covered at overview level via the field manual (p.12).
+- [x] *State of Agent Engineering 2026* — ops gap, not model gap.
+- [x] *FinOps for Agents* — gateway budget caps; Cost-per-Accepted-Outcome.
+- [x] *Backtesting AI Agents* — pass^k (every trial passes), self-heal loop.
 
 **BUILD**
 - [ ] Gateway budget caps: loop/step limits, tool-call caps, token + wall-clock limits.
@@ -196,6 +196,14 @@ redeploys, and confirms a test email actually arrives → then exit is fully met
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (11)** — Summit-view pass through Levels 4/5/6 from the field
+  manual: L4 Scale (deliberate topology, initializer→worker handoff, protocol map,
+  "add a 2nd agent only when it earns its place"); L5 Harden (capability-vs-
+  regression evals, trace everything, the lethal trifecta, isolation as primary
+  boundary); L6 Ship (gateway budget caps, Cost-per-Accepted-Outcome, pass^k,
+  self-heal, "ops plane, not model, is the scaling gap"). READ items marked at
+  overview level; hands-on BUILD tasks await a project that actually needs to
+  scale. Remaining: the Hero Gate + the 30-Day Run Sheet.
 - **2026-07-06 (10)** — BUILT the first harness (Level 3). Ran plan→act→verify on
   the waitlist task: wrote vybecheck-PLAN.md, rewrote the form to POST to Formspree
   with real error handling (success only on real success), verified with
