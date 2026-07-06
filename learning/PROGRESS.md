@@ -46,7 +46,9 @@ Do those three and you're standing on Level 3's doorstep.
 - [x] Draw the loop (observe → plan → act → verify) — you learned it this session.
 
 **BUILD**
-- [ ] Pick the task your first harness will tackle (one concrete, verifiable thing).
+- [x] Pick the task your first harness will tackle: **make the Vybecheck waitlist
+  form actually capture/save emails** (currently it saves none). Verifiable:
+  submit an email → confirm it was stored.
 - [x] Pick your stack: **Claude + Claude Code** (Claude Agent SDK family).
 - [x] Pick your first-harness project: **Vybecheck** (vybecheck.app).
 
@@ -171,7 +173,7 @@ linked in the manual for a deeper dive later.
 ### Scorecard
 | Level | Read | Build | Exit met |
 |-------|------|-------|----------|
-| 0 — Orientation | ☐ | ☐ | ☐ |
+| 0 — Orientation | ☑ | ☑ | ☑ |
 | 1 — Foundations | ☑ | ☑ | ☑ |
 | 2 — Primitives  | ☐ | ☐ | ☐ |
 | 3 — Build       | ☐ | ☐ | ☐ |
@@ -187,6 +189,10 @@ linked in the manual for a deeper dive later.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (8)** — Picked the first harness task: make the Vybecheck waitlist
+  form actually save emails. **Level 0 CLOSED** (all boxes + exit met). Levels 0
+  and 1 now fully complete. Next: finish Level 2's remaining primitives, then the
+  Level 3 build.
 - **2026-07-06 (7)** — Joel wrote his own definition of "harness" (recorded in
   the L0 READ box) — strong grasp of the verification + "laws the agent obeys"
   core. One L0 box left: pick the first concrete harness task.
