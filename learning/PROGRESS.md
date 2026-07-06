@@ -38,7 +38,7 @@ Do those three and you're standing on Level 3's doorstep.
 ## ▣ Level 0 — Orientation
 
 **READ**
-- [ ] Read the Orientation + Mental Model pages.
+- [x] Read the Orientation + Mental Model pages — walked through the field manual (pp.1–3).
 - [ ] Write your own one-paragraph definition of "harness."  ← _your words here_
 - [x] Draw the loop (observe → plan → act → verify) — you learned it this session.
 
@@ -183,6 +183,11 @@ Do those three and you're standing on Level 3's doorstep.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (4)** — Started reading the field manual together. Covered
+  Section 0 (Orientation) + the Mental Model (pp.1–3): the definition, the core
+  "every crutch is temporary" principle, the 5 primitives, the observe→plan→act
+  →verify loop + reasoning sandwich, and the rank-30→top-5 lesson. Checked the
+  L0 "read Orientation + Mental Model" box. Next: Level 1 Foundations (p.4).
 - **2026-07-06 (3)** — Picked Vybecheck as the first-harness project. Drafted its
   `AGENTS.md` (learning/vybecheck-AGENTS.md) assuming a Next.js/React + npm stack.
   Open: confirm the stack via `cat package.json` and fix the ⚠ lines; write PLAN.md.
