@@ -93,17 +93,19 @@
 
     /* CARD DECK */
     .deck { margin: 80px auto 0; position: relative; width: 300px; height: 360px; z-index: 1; }
-    .dcard { position: absolute; left: 20px; top: 20px; width: 260px; border-radius: 24px; background: var(--card); border: 1px solid var(--border); overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,0.6); transform-origin: center; }
-    .dcard.back2 { transform: rotate(7deg) translate(16px, 4px) scale(0.93); opacity: 0.45; z-index: 1; }
-    .dcard.back1 { transform: rotate(-5deg) translate(-14px, 2px) scale(0.96); opacity: 0.7; z-index: 2; }
-    .dcard.front { z-index: 3; }
-    .dtop { height: 150px; display: flex; align-items: center; justify-content: center; position: relative; }
-    .dinit { font-size: 42px; font-weight: 800; color: #fff; letter-spacing: 1px; }
+    .dcard { position: absolute; left: 20px; top: 20px; width: 260px; border-radius: 24px; background: var(--card); border: 1px solid var(--border); overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,0.6); transform-origin: center; transition: transform 0.6s cubic-bezier(.22,.61,.36,1), opacity 0.5s ease; will-change: transform, opacity; }
+    .dtop { height: 140px; display: flex; align-items: center; justify-content: center; position: relative; }
+    .dinit { font-size: 40px; font-weight: 800; color: #fff; letter-spacing: 1px; }
+    .dcheck { position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.45); border-radius: 100px; padding: 4px 9px; font-size: 10px; color: #fff; font-weight: 700; display: flex; align-items: center; gap: 4px; }
+    .dcheck svg { width: 11px; height: 11px; stroke: var(--mint); stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
     .dpill { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.45); border-radius: 100px; padding: 4px 10px; font-size: 10px; color: #fff; font-weight: 700; }
-    .dbody { padding: 16px 18px 20px; }
+    .dbody { padding: 15px 18px 18px; }
     .dname { font-size: 17px; font-weight: 800; margin-bottom: 7px; }
-    .dbadge { display: inline-block; border-radius: 100px; padding: 3px 10px; font-size: 10px; font-weight: 700; margin-bottom: 9px; }
-    .dtag { font-size: 12px; color: var(--muted); line-height: 1.5; }
+    .dbadge { display: inline-block; border-radius: 100px; padding: 3px 10px; font-size: 10px; font-weight: 700; margin-bottom: 12px; }
+    .dtags { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+    .dchip { font-size: 10px; font-weight: 600; color: var(--muted); background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 100px; padding: 3px 9px; }
+    .dstats { display: flex; gap: 16px; font-size: 11px; color: var(--dim); font-weight: 600; }
+    .dstats b { color: var(--text); font-weight: 800; }
 
     /* SHARED */
     section { padding: 110px 24px; }
@@ -202,29 +204,32 @@
     <a href="#how" class="btn-out">See how it works</a>
   </div>
 
-  <div class="deck">
-    <div class="dcard back2">
+  <div class="deck" id="deck">
+    <div class="dcard">
+      <div class="dtop" style="background:linear-gradient(135deg,#FF2D78,#BF5AF2)"><span class="dinit">MR</span><span class="dcheck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5 11-11"/></svg>Verified</span><span class="dpill">128K</span></div>
+      <div class="dbody">
+        <div class="dname">Maya Rivera</div>
+        <div class="dbadge" style="border:1px solid #BF5AF255;background:#BF5AF218;color:#C58BF0">Solo Creator</div>
+        <div class="dtags"><span class="dchip">Fashion</span><span class="dchip">Lifestyle</span><span class="dchip">LA</span></div>
+        <div class="dstats"><span><b>128K</b> followers</span><span><b>37</b> collabs</span></div>
+      </div>
+    </div>
+    <div class="dcard">
+      <div class="dtop" style="background:linear-gradient(135deg,#00CFFF,#7B2FBE)"><span class="dinit">SN</span><span class="dcheck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5 11-11"/></svg>Verified</span></div>
+      <div class="dbody">
+        <div class="dname">Studio North</div>
+        <div class="dbadge" style="border:1px solid #00CFFF55;background:#00CFFF18;color:#00CFFF">Content House</div>
+        <div class="dtags"><span class="dchip">LA</span><span class="dchip">Creator House</span></div>
+        <div class="dstats"><span><b>3</b> spots open</span><span><b>540K</b> reach</span></div>
+      </div>
+    </div>
+    <div class="dcard">
       <div class="dtop" style="background:linear-gradient(135deg,#FF6B35,#FFD600)"><span class="dinit">AU</span></div>
       <div class="dbody">
         <div class="dname">Aura</div>
         <div class="dbadge" style="border:1px solid #FFD60055;background:#FFD60018;color:#FFD600">Brand</div>
-        <div class="dtag">Booking creators for our spring campaign.</div>
-      </div>
-    </div>
-    <div class="dcard back1">
-      <div class="dtop" style="background:linear-gradient(135deg,#00CFFF,#7B2FBE)"><span class="dinit">SN</span></div>
-      <div class="dbody">
-        <div class="dname">Studio North</div>
-        <div class="dbadge" style="border:1px solid #00CFFF55;background:#00CFFF18;color:#00CFFF">Content House</div>
-        <div class="dtag">LA creator house. 3 spots opening this fall.</div>
-      </div>
-    </div>
-    <div class="dcard front">
-      <div class="dtop" style="background:linear-gradient(135deg,#FF2D78,#BF5AF2)"><span class="dinit">MR</span><span class="dpill">128K</span></div>
-      <div class="dbody">
-        <div class="dname">Maya Rivera</div>
-        <div class="dbadge" style="border:1px solid #BF5AF255;background:#BF5AF218;color:#C58BF0">Solo Creator</div>
-        <div class="dtag">Fashion &amp; lifestyle. Open to brand collabs.</div>
+        <div class="dtags"><span class="dchip">Skincare</span><span class="dchip">Campaign</span></div>
+        <div class="dstats"><span><b>$5K</b> budget</span><span>Spring '26</span></div>
       </div>
     </div>
   </div>
@@ -367,6 +372,42 @@
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     });
   });
+
+  // Auto-swiping card deck in the hero — cycles through the profiles.
+  (function () {
+    const deck = document.getElementById('deck');
+    if (!deck) return;
+    const cards = Array.from(deck.querySelectorAll('.dcard'));
+    if (cards.length < 2) return;
+    const positions = [
+      { t: 'translate(0,0) rotate(0deg) scale(1)', o: 1, z: 3 },
+      { t: 'translate(-14px,2px) rotate(-5deg) scale(0.96)', o: 0.7, z: 2 },
+      { t: 'translate(16px,4px) rotate(7deg) scale(0.93)', o: 0.45, z: 1 },
+    ];
+    let order = cards.map((_, i) => i); // order[0] is the front card
+    function place(card, p) { card.style.transform = p.t; card.style.opacity = p.o; card.style.zIndex = p.z; }
+    function render() {
+      order.forEach((cardIdx, pos) => place(cards[cardIdx], positions[Math.min(pos, positions.length - 1)]));
+    }
+    render();
+    function step() {
+      const front = cards[order[0]];
+      front.style.transition = 'transform 0.5s ease-in, opacity 0.5s ease-in';
+      front.style.transform = 'translate(200px,-28px) rotate(16deg) scale(1)';
+      front.style.opacity = '0';
+      setTimeout(() => {
+        order.push(order.shift());
+        front.style.transition = 'none';
+        place(front, positions[positions.length - 1]);
+        void front.offsetWidth; // reflow so the jump-to-back isn't animated
+        front.style.transition = '';
+        render();
+      }, 520);
+    }
+    let timer = setInterval(step, 2800);
+    deck.addEventListener('mouseenter', () => clearInterval(timer));
+    deck.addEventListener('mouseleave', () => { timer = setInterval(step, 2800); });
+  })();
 </script>
 </body>
 </html>
