@@ -21,8 +21,13 @@ form ID.
 - [x] M4 — Handle failure: show an error message and re-enable the button on error
       (don't fake success if the send failed — that's the whole point).
 - [x] M5 — Verify: `html-validate` passes; page renders; console clean.
-- [ ] M6 — (Joel) Create a free Formspree account, paste the real form ID in place
-      of `YOUR_FORM_ID`, redeploy, and submit a test email to confirm it arrives.
+- [x] M6 — Formspree account created, form `mykqvdvp` wired in, deployed to Netlify
+      (Production published 10:03 PM), test submit on live site returned the real
+      success state ("You're in"). Final inbox confirmation in progress.
+
+## ✅ DONE — 2026-07-06
+Waitlist is live and capturing emails via Formspree. Shipped and verified on the
+real site. (First-submission email confirmation may be needed once in Formspree.)
 
 ## Definition of done
 A submitted email actually lands in Formspree/Joel's inbox, the success state

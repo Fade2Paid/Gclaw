@@ -114,9 +114,10 @@ run E2E (Claude Code). ✅
   verify gate with `.htmlvalidate.json` to ignore style noise, catch real bugs.
 - [x] Logs full output to a file, not the context window (summary lines back).
 
-**Exit:** a single-agent harness completes your Level 0 task on its own.
-_Nearly there: code built + verified. Remaining (M6): Joel adds his Formspree ID,
-redeploys, and confirms a test email actually arrives → then exit is fully met._
+**Exit (MET ✅):** the harness (Claude Code, configured with AGENTS.md + PLAN.md +
+verify gate) completed the waitlist task, and Joel SHIPPED it — Formspree wired,
+deployed to Netlify (10:03 PM), live site returned the real success state on a
+test submit. First real harness: built, shipped, verified in the world.
 
 ---
 
@@ -183,7 +184,7 @@ redeploys, and confirms a test email actually arrives → then exit is fully met
 | 0 — Orientation | ☑ | ☑ | ☑ |
 | 1 — Foundations | ☑ | ☑ | ☑ |
 | 2 — Primitives  | ☑ | ☐ | ☑ |
-| 3 — Build       | ☐ | ☐ | ☐ |
+| 3 — Build       | ☐ | ☑ | ☑ |
 | 4 — Scale       | ☐ | ☐ | ☐ |
 | 5 — Harden      | ☐ | ☐ | ☐ |
 | 6 — Ship        | ☐ | ☐ | ☐ |
@@ -196,6 +197,12 @@ redeploys, and confirms a test email actually arrives → then exit is fully met
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (12)** — 🏆 SHIPPED THE FIRST HARNESS. Joel created a Formspree
+  account + form (mykqvdvp), we wired it into the verified index.html, and Joel
+  deployed to Netlify (Production published 10:03 PM). Test submit on the LIVE
+  vybecheck.app returned the real success state — proving the email pipe works
+  (success only shows on a genuine 200). Level 3 build + exit MET. First harness:
+  built, shipped, verified in the real world. Joel did the hands-on shipping.
 - **2026-07-06 (11)** — Summit-view pass through Levels 4/5/6 from the field
   manual: L4 Scale (deliberate topology, initializer→worker handoff, protocol map,
   "add a 2nd agent only when it earns its place"); L5 Harden (capability-vs-
