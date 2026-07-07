@@ -197,6 +197,10 @@ test submit. First real harness: built, shipped, verified in the world.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (13)** — ✅ VERIFIED IN PRODUCTION. A real submission
+  (joel-test@vybecheck.app, Jul 7 02:17) landed in the Formspree inbox — hard
+  evidence the waitlist captures emails. Inbox 0 → 1. Level 3 fully, provably
+  complete. From "no experience" to a shipped, verified feature in one session.
 - **2026-07-06 (12)** — 🏆 SHIPPED THE FIRST HARNESS. Joel created a Formspree
   account + form (mykqvdvp), we wired it into the verified index.html, and Joel
   deployed to Netlify (Production published 10:03 PM). Test submit on the LIVE
