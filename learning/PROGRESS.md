@@ -197,6 +197,12 @@ test submit. First real harness: built, shipped, verified in the world.
 ### Session log
 _A short note each session — what you learned, what's next. Newest on top._
 
+- **2026-07-06 (14)** — Extended harness practice: ran ~11 plan→act→verify→commit
+  loops iterating the Vybecheck site (headline, line icons, demo card, animated
+  swipe deck, removal, coded glow background). Every change verified via
+  `html-validate` + a real headless-browser render check before committing;
+  big/removal changes gated on Joel's approval (HITL). Live proof of Level 3
+  discipline. Then walked the manual's Hero Checklist against the built harness.
 - **2026-07-06 (13)** — ✅ VERIFIED IN PRODUCTION. A real submission
   (joel-test@vybecheck.app, Jul 7 02:17) landed in the Formspree inbox — hard
   evidence the waitlist captures emails. Inbox 0 → 1. Level 3 fully, provably
