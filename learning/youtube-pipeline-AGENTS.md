@@ -17,8 +17,9 @@
   that the inventor built the very thing that killed him. Every case pays that off.
 - **Runtime:** Claude (app) orchestrating Higgsfield for generation; I post to
   YouTube myself.
-- **Video format target:** <confirm — likely 16:9 horizontal, long-form faceless
-  narration, several minutes, ~5 cases per video>
+- **Video format target:** 9:16 vertical (YouTube Shorts), 1–2 minutes, ~5 cases
+  per video. Fast-paced — roughly 15–20 sec per case, so each script beat stays
+  tight: name → invention → the ironic death, then cut to the next.
 
 ## 2. How to work here (the loop, in pipeline order)
 
