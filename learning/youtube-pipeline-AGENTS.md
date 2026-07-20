@@ -11,10 +11,14 @@
 - **Product:** a short-video pipeline. Given a niche, it produces a script,
   generates the video on Higgsfield, and hands you a finished video ready to
   post. **You do the actual YouTube posting yourself.**
-- **Niche:** <your chosen niche — e.g., "60-second personal-finance tips">
-- **Runtime:** Claude orchestrating MCP tools (Higgsfield for generation,
-  YouTube for publishing).
-- **Video format target:** <e.g., 9:16 vertical, 30–60 sec, for YouTube Shorts>
+- **Niche:** faceless, non-fiction narration — historical stories of inventors
+  **killed by their own inventions.** ~5 verified cases per video.
+- **The hook (core creative rule):** the death must *land on screen* — the irony
+  that the inventor built the very thing that killed him. Every case pays that off.
+- **Runtime:** Claude (app) orchestrating Higgsfield for generation; I post to
+  YouTube myself.
+- **Video format target:** <confirm — likely 16:9 horizontal, long-form faceless
+  narration, several minutes, ~5 cases per video>
 
 ## 2. How to work here (the loop, in pipeline order)
 
@@ -34,10 +38,16 @@
 
 ## 4. Verification
 
+**Accuracy check — this is NON-FICTION, so facts are part of "does it work":**
+- Every historical claim (names, dates, place, cause of death) must be accurate
+  and verifiable. **Never invent or embellish historical detail.**
+- Flag any claim you're unsure of for me to verify before it goes in the script.
+
 **Objective checks — Claude runs these on every video before showing me:**
 - Duration is within the target range.
 - Aspect ratio matches the format target.
 - It is **not** a duplicate of a video I already rejected (check the reject log).
+- Every case actually pays off the hook (the death lands on screen).
 
 **Subjective check — that's ME:**
 - Does it look good and match the niche/style? I approve or reject.
